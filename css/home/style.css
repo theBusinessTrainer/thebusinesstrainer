@@ -1,0 +1,209 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(225, 241, 255);
+}
+.logo{
+    height: 50px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    position: sticky;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 0px 30px black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.full-width{
+    width: 100%;
+}
+
+nav{
+    width: 20%;
+}
+.header-links{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.header-links li a {
+    text-decoration: none;
+    font-size: 16pt;
+    color: black;
+}
+.header-links li{
+    list-style:none;
+}
+main{
+    background-image: url(/images/business-home.webp);
+    background-repeat: no-repeat;
+    background-position: right, center;
+    background-size: contain, cover;
+    height: 55vh;
+    background-color: rgb(87, 107, 238);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0;
+    border-radius: 20px 50px 150px 100px;
+    position: relative;
+    color: white;
+}
+h2 , h1{
+    text-align: center;
+}
+.intro-text-wrapper{
+    width: 50%;
+    margin-bottom: 5vh;
+}
+.intro-funcs-holder{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.round-funcs{
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+.round-funcs-holder{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+}
+.curve{
+    content: '';
+    border-radius: 50% ;
+    background-color: rgb(225, 241, 255);
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    height: 20px;
+    width: 400px;
+    transform: translate(-30%,-40%);
+}
+article{
+    width: 96%;
+    align-self: center;
+}
+.articles{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+.articles-holder{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.videos, .blogs{
+    width: 48%;
+}
+#choose-blogs-list{
+    position: absolute;
+    background-color: rgb(25, 26, 29);
+    border-radius: 10px;
+    transition: 200ms all ease;
+    z-index: 50;
+    visibility: hidden;
+}
+#choose-blogs-list:target{
+    visibility: visible;
+}
+#choose-blogs-list ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16pt;
+    text-align: center;
+}
+#choose-blogs-list ul li{
+    list-style: none;
+    border-bottom: 1px solid white;
+    box-shadow: 0px 0px 10px rgba(208, 239, 255, 0.69);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    height: calc(100% + 10px);
+    display: flex;
+    justify-content: center;
+}
+#choose-blogs-list ul{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    color: white;
+    background-color: rgb(10, 12, 22);
+}
+@media (max-width: 786px){
+    main{
+        height: 80vh;
+        justify-content: space-between;
+        border-radius:5px
+    }
+    nav{
+        width: 50%
+    }
+    .header-links li a{
+        font-size: 10pt;
+    }
+    h1, h2{
+        text-shadow: 2px 10px 30px black;
+    }
+    .header-links {
+        justify-content: space-evenly;
+        margin: 0px;
+        padding: 0px;
+    }
+    .round-funcs-holder{
+        font-size: 10pt;
+    }
+    p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: justify;
+    }
+    .articles-holder{
+        flex-direction: column;
+    }
+    .blogs, .videos{
+        width: 100%;
+    }
+    .intro-text-wrapper{
+        width: 100%;
+        margin: 0px;
+    }
+    .intro-funcs-holder{
+        height: 5vh;
+        width: 100%;
+        margin-bottom: 10vh;
+        align-self: center;
+    }
+    .curve{
+        display: none;
+    }
+    .round-funcs{
+        width: 40px;
+        height: 40px;
+    }
+}

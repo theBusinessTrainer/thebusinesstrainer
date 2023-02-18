@@ -1,0 +1,314 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;    
+    background-image: url(/images/business-blog-background.webp);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-color: rgb(74, 125, 255);
+    gap: 1vw;
+}
+article{
+    min-height: 30%;
+    width: 100%;
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.back-home{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+#contact-us{
+    background-color: rgb(21, 21, 21);
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: none;
+    transition: 500ms all ease;
+}
+#contact-us:target {
+    display: flex;
+}
+.intro-images{
+    height: 50%;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.close-contact{
+    font-family: monospace;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+.full-width{
+    width: 100%;
+}
+nav div a{
+    font-size: 16pt;
+    color: white;
+    text-decoration: none;
+    transition: 200ms all;
+}
+nav div a:hover{
+    color: goldenrod;
+}
+.contact-button{
+    height: 100%;
+    width: 20%;
+    border: none;
+    background-color: black;
+    color: white;
+}
+button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.article-header{
+    height: 40vh;
+    width: 96%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.intro-holder{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.intro-headers{
+    font-size: 18pt;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.intro-divs{
+    height: 20vh;
+    width: 24%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+h1{
+    margin: 0px;
+    width: 50%;
+}
+aside{
+    min-height: 60vh;
+    width: 25%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 3vh;
+    scroll-behavior: smooth;
+    background-color: rgba(29, 29, 29, 0.9);
+    color: white;
+    transition: 200ms all ease;
+}
+aside:hover{
+    box-shadow: 0px 0px 15px black;
+    transform: scale(1.1);
+}
+.aside-divs{
+    height: fit-content;
+    width: 70%;
+    align-self: center;
+    text-align: justify;
+}
+main{
+    min-height: 80vh;
+    width: 65%;
+    background-color: white;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    transition: 200ms all ease;
+    margin-top: 5vh;
+}
+main::-webkit-scrollbar{
+    width: 1px;
+}
+main::-webkit-scrollbar-track{
+    background-color: white;
+}
+main::-webkit-scrollbar-thumb{
+    background-color: darkslategray;
+}
+main:hover{
+    box-shadow: 0px 0px 15px white;
+    transform: scale(1.02);
+
+}
+h2{
+    transition: 200ms all ease;
+}
+h2:hover{
+    font-size: 20pt;
+}
+.paragraphs-holders{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    transition: 500ms all;
+}
+
+.text-area{
+    width: 70%;
+    height: 100%;
+}
+.image-area{
+    width: 20%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+.image-area object, .image-area img{
+    height: 50%;
+    object-fit: contain;
+}
+
+.books-cover{
+    height: 250px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.books-cover img{
+    height: 90%;
+    width: 100%;
+    object-fit: contain;
+}
+.books-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.books-container h4{
+    width: 100%;
+}
+header{
+    display: none;
+}
+.actions{
+    display: flex;
+    justify-content: space-between;
+}
+.close{
+    display: none;
+}
+.show-menu{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu1, .menu2, .menu3{
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    content: "";
+}
+
+@media (max-width: 786px){
+    aside:hover{
+        transform: none;
+    }
+    h1{
+        width: 100%;
+    }
+
+    .contact-button{
+        width: 40%;
+    }
+    #contact-us{
+        width: 60%;
+    }
+    .intro-holder{
+        /* display: none; */
+        flex-direction: column;
+    }
+    .intro-divs{
+        width: 100%;
+    }
+    #contact-us a{
+        font-size: 10pt;
+    }
+    body{
+        flex-direction: column;
+    }
+    main{
+        width: 96%;
+    }
+    aside{
+        display: none;
+        width: 90%;
+        background-color: rgb(0, 0, 0);
+    }
+    header{
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.907);
+        width: 100%;
+        justify-content: space-between;
+        height: 40px;
+        align-items: center;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    .logo{
+        width: 40px;
+    }
+    header> div{
+        color: white;
+        display: flex;
+        align-items: center;
+    }   
+    #menu:target{
+        display: flex;
+        position: absolute;
+        top: 0;
+    }
+    .close{display: block;}
+}
