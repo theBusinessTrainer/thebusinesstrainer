@@ -4,7 +4,7 @@
 .paragraphs-holders:hover{
     background-color: rgb(210, 233, 201);
 }
-.article-header{background-image: url(./images/actions.jpg);}
+.article-header{background-image: url(../images/actions.jpg);}
 aside{
     margin-bottom: 60vh;
 }
