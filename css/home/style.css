@@ -46,7 +46,7 @@ nav{
     list-style:none;
 }
 main{
-    background-image: url(/images/business-home.webp);
+    background-image: url(./images/business-home.webp);
     background-repeat: no-repeat;
     background-position: right, center;
     background-size: contain, cover;
