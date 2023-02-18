@@ -118,7 +118,7 @@ article{
     justify-content: space-evenly;
 }
 .videos, .blogs{
-    width: 48%;
+    width: 48%
 }
 #choose-blogs-list{
     position: absolute;
