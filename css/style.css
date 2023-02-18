@@ -6,7 +6,7 @@ body{
     margin: 0px;
     padding: 0px;
     width: 100%;    
-    background-image: url(./images/business-blog-background.webp);
+    background-image: url(../images/business-blog-background.webp);
     /* background-repeat: no-repeat; */
     background-size: cover;
     background-color: rgb(74, 125, 255);
