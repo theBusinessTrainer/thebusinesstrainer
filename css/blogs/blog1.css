@@ -1,0 +1,15 @@
+.article-header{
+    background-image: url(/images/conversation3.webp);
+}
+.intro-divs{
+    background-color: rgb(232, 201, 233);
+}
+.paragraphs-holders:hover{
+    background-color: rgb(234, 244, 255);
+}
+@media (max-width: 786px){
+    .article-header{
+        background-position: right;
+        background-size: 300px 200px;
+    }
+}
