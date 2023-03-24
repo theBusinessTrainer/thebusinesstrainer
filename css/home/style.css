@@ -159,6 +159,11 @@ footer{
     color: white;
     background-color: rgb(10, 12, 22);
 }
+footer div div nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14pt;
+}
 @media (max-width: 786px){
     main{
         height: 80vh;
