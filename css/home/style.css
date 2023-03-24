@@ -42,7 +42,7 @@ nav{
     font-size: 16pt;
     color: black;
 }
-.header-links li > a{
+.header-links li > a:hover{
     color: goldenrod;
 }
 .header-links li{
